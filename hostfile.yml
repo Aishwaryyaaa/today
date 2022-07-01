@@ -3,6 +3,7 @@
 #  vars_files: url.yml
 #  vars: 
 #    URL: cloudblitz.in
+  host_vars:
   tasks:
    
    - name: Print messages_1
