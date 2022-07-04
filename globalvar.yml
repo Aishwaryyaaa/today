@@ -1,6 +1,7 @@
 - name: ashplay
   hosts: all
-  URL: noname.in
+  vars:
+   URL: noname.in
   tasks: 
    - name: anything
      debug:
