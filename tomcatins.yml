@@ -15,4 +15,5 @@
     systemd:
       name: tomcat
       state: started
-      daemon_reload: true        
+      daemon_reload: true   
+      scope: user
