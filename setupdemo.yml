@@ -5,3 +5,6 @@
      debug:
       msg: "this is for ans dis. {{ansible_distribution}}"
      when: alliswell== "Ubuntu"
+   - name: ansible
+     debug:
+      msg: "this is for ans dis. {{ansible_env.HOME}}"
