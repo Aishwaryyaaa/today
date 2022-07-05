@@ -12,4 +12,4 @@
       dest: /usr/local
       remote_src: yes    
   - name: Run Tomcat
-    shell: start /usr/local/apache-tomcat-8.5.81/bin/catalina.sh
+    shell: /usr/local/apache-tomcat-8.5.81/bin/catalina.sh start
