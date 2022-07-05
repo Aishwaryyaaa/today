@@ -1,6 +1,6 @@
 - name: demo
   hosts: all
   tasks:
-  - name: ansible_distribution
+  - name: ansible
     debug:
-     msg: "this is for ans dis. {{ansible_distribution}}" 
+     msg: "this is for ans dis. {{ansible_env.HOME}}" 
