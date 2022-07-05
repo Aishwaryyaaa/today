@@ -1,0 +1,11 @@
+- name: for java
+  hosts: all
+  tasks: 
+  - name: update all
+    yum:
+     name: "*"
+     state: latest
+  - name: install java
+    yum:
+     name: java
+     state: latest   
