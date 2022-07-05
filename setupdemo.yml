@@ -3,10 +3,5 @@
   gather_facts: no
   tasks:
   - name: ansible
-    debug:
-     msg: "this is for ans dis. {{ansible_env.HOME}}" 
-    tags: env
-  - name: ansible
-    debug:
-     msg: "this is for ans dis. {{ansible_distribution}}" 
-    tags: dist
+    shell: id
+    register: out
