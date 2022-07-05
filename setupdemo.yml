@@ -4,4 +4,4 @@
    - name: ansible_distribution
      debug:
       msg: "this is for ans dis. {{ansible_distribution}}"
-     when: msg== "ubuntu" 
+     when: msg== "Ubuntu" 
