@@ -14,6 +14,6 @@
   - name: Start and Enable Tomcat 8 on sever
     systemd:
       name: apache-tomcat-8.5.81
-      state: start
+      state: started
       daemon_reload: true   
       scope: user
