@@ -1,9 +1,8 @@
 - name: demo
   hosts: all
+  become: true
   tasks:
-  - name: ansible
-    shell: id
-    register: out
-  - name: p1
-    debug:
-     msg: "{{out}}"
+  - name: forinstall
+    apt:
+      name: ftp
+      state: latest
