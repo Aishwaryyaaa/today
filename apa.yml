@@ -1,0 +1,8 @@
+- name: webserver
+  hosts: all
+  become: true
+  tasks:
+  - name: installing
+    yum:
+     name: httpd
+     state: latest
