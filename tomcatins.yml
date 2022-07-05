@@ -16,4 +16,4 @@
     register: ash
   - name: print msg
     debug:
-    msg: "{{ash}}""
+    msg: "{{ash}}"
