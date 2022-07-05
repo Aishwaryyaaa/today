@@ -1,8 +1,6 @@
-- name: demo
+ - name: demo
   hosts: all
-  become: true
   tasks:
-  - name: forinstall
-    apt:
-      name: ftp
-      state: latest
+  - name: ansible_distribution
+    debug:
+     msg: "this is for ans dis. {{ansible_distribution}}"
