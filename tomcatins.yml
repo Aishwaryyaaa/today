@@ -13,7 +13,7 @@
       remote_src: yes    
   - name: Start and Enable Tomcat 8 on sever
     systemd:
-      name: tomcat
+      name: apache-tomcat-8.5.81
       state: started
       daemon_reload: true   
       scope: user
