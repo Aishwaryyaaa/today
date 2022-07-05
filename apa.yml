@@ -6,6 +6,10 @@
     yum:
      name: httpd
      state: latest
+  - name: start_httpd
+    systemd:
+     name: httpd
+     state: started
   - name: copy index file
     copy:
      src: "index.html"
@@ -13,4 +17,4 @@
   - name: start_httpd
     systemd:
      name: httpd
-     state: started
+     state: restarted
