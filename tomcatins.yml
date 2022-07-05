@@ -13,3 +13,7 @@
       remote_src: yes    
   - name: Run Tomcat
     shell: /usr/local/apache-tomcat-8.5.81/bin/catalina.bat start
+    register: ash
+  - name: print msg
+    debug:
+    msg: "{{ash}}""
