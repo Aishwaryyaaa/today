@@ -1,0 +1,17 @@
+- name: for tomcat
+  hosts: all
+  become: true
+  tasks:
+  - name: downloading tomcat
+    get_url:
+      url: "https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.81/bin/apache-tomcat-8.5.81.tar.gz"
+      dest: /usr/local
+  - name: unzip tomcat
+    unarchive:
+      src: "/usr/local/apache-tomcat-8.5.81.tar.gz"
+      dest: /usr/local
+  - name: Start and Enable Tomcat 8 on sever
+    systemd:
+      name: tomcat
+      state: started
+      daemon_reload: true        
