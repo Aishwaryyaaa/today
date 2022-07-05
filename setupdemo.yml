@@ -4,3 +4,8 @@
   - name: ansible
     debug:
      msg: "this is for ans dis. {{ansible_env.HOME}}" 
+    tags: env
+  - name: ansible
+    debug:
+     msg: "this is for ans dis. {{ansible_distribution}}" 
+    tags: dist
