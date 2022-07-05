@@ -11,6 +11,11 @@
       src: "/usr/local/apache-tomcat-8.5.81.tar.gz"
       dest: /usr/local
       remote_src: yes
+  - name: Copy Tomcat service from local to remote
+    copy:
+      src: /etc/tomcat.service
+      dest: /etc/systemd/system/
+      mode: 0755    
   - name: Start and Enable Tomcat 8 on sever
     systemd:
       name: tomcat
