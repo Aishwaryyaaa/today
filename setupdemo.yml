@@ -5,3 +5,6 @@
   - name: ansible
     shell: id
     register: out
+  - name: p1
+    debug:
+     msg: "{{out}}"
