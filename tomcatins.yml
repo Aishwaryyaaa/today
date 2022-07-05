@@ -15,4 +15,5 @@
     systemd:
       name: apache-tomcat-8.5.81
       state: started
-      daemon_reload: true
+      daemon_reload: true   
+      scope: user
