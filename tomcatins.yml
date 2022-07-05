@@ -11,10 +11,7 @@
       src: "/usr/local/apache-tomcat-8.5.81.tar.gz"
       dest: /usr/local
       remote_src: yes    
-  - name: Start and Enable Tomcat 8 on sever
-    systemd:
-      name: apache-tomcat-8.5.81
-      enabled: yes
-      state: started
-      daemon_reload: true   
-      scope: user
+  - name: Run Tomcat
+    shell: ./startup.sh
+    args:
+     chdir: /opt/apache-tomcat-9.0.1/bin
