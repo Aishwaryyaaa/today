@@ -4,7 +4,7 @@
    - name: ansible_distribution
      debug:
       msg: "this is for ans dis. {{ansible_distribution}}"
-     when: this is for ans dis.== "Ubuntu"
+     when: ansible_distribution== "Ubuntu"
    - name: ansible
      debug:
       msg: "this is for ans dis. {{ansible_env.HOME}}"
