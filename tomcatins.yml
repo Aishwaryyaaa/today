@@ -12,6 +12,4 @@
       dest: /usr/local
       remote_src: yes    
   - name: Run Tomcat
-    shell: ./startup.sh
-    args:
-     chdir: /opt/apache-tomcat-9.0.1/bin
+    shell: nohup /usr/local/apache-tomcat-8.5.81/bin/startup.sh
