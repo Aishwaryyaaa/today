@@ -1,0 +1,4 @@
+- name: tp
+  hosts: all
+  tasks:
+  - shell: ansible -i hosts all -m setup > setupfile.txt
