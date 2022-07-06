@@ -6,6 +6,6 @@
       path: /mnt/myblock.txt
       create: yes
       block:
-         my data i am supercool
-         me hi bhagwaan
+         my data i am supercool /n
+         me hi bhagwaan /n
          nilam bhi bhagwaan
