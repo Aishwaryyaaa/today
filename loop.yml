@@ -2,8 +2,8 @@
   hosts: all
   tasks:
   - name: setkrege
-    set_fact: URL= ["ash.com","supercool.in"] city= somewhere 
+    set_fact: URL= ["ash.com","supercool.in"] city="somewhere" 
 
-  - name: setfacl
+  - name: setfact
     debug:
-      msg: "print{{URL}} {{city}}"
+      msg: "{{URL}} {{city}}"
