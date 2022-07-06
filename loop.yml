@@ -1,10 +1,10 @@
 - name : loop name
   hosta: all
   tasks: 
-    - name : print city name
-      debug: 
-        msg: "all my city name : {{item}}"
-      loop:
+  - name : print city name
+    debug: 
+      msg: "all my city name : {{item}}"
+    loop:
         - nag
         - pune
         - mumbai
