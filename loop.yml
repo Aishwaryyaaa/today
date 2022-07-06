@@ -1,7 +1,7 @@
 - name: loop name
   hosts: all
   tasks: 
-  - name : print city name
+  - name: print city name
     debug: 
       msg: "all my city name : {{item}}"
     loop:
