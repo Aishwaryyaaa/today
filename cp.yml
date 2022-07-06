@@ -2,8 +2,8 @@
   hosts: all
   become: true
   tasks:
-  - blockinfile:
+  - lineinfile:
       path: /mnt/myblock.txt
       create: yes
-      block:
-         my data i am supercool
+      line:
+         15 20
