@@ -1,12 +1,8 @@
-- name: mypb
+- name: my
   hosts: all
-  become: true
   tasks:
-  - name: install multiple packages
-    apt:
-     name: "{{item}}"
-     state: latest
-    loop:
-      - vsftpd
-      - ansible
-      - nginx
+  - name: setkrege
+    set_facl: URL= ["ash.com","supercool.in"] city= somewhere 
+  - name: setfacl
+    debug:
+     msg: "print{{URL}} {{city}}"
