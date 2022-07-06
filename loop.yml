@@ -2,7 +2,7 @@
   hosts: all
   tasks:
   - name: setkrege
-    set_fact: URL=["ash.com","yolo.in"] city="somewhere" 
+    set_fact: URL="ash.com","yolo.in" city="somewhere" 
 
   - name: setfact
     debug:
