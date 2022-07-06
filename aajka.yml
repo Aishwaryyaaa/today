@@ -1,7 +1,7 @@
 - name: loop
   hosts: all
   tasks:
-  - name: loop k liye
+  - name: loop vala
     debug:
      msg: "ye apun ka illaka hai:{{item}}"
     loop:
