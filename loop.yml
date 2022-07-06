@@ -6,4 +6,4 @@
 
   - name: setfact
     debug:
-      msg: "{{URL}} {{city}}"
+      msg: "{{URL}} /n {{city}}"
