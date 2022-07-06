@@ -11,7 +11,7 @@
 
 # some basic default values...
 
-inventory      = hosts
+#inventory      = /etc/ansible/hosts
 #library        = /usr/share/my_modules/
 #module_utils   = /usr/share/my_module_utils/
 #remote_tmp     = ~/.ansible/tmp
@@ -104,7 +104,7 @@ inventory      = hosts
 
 # default user to use for playbooks if user is not specified
 # (/usr/bin/ansible will use current user as default)
-remote_user = centos
+#remote_user = root
 
 # logging is off by default unless this path is defined
 # if so defined, consider logrotate
@@ -133,7 +133,7 @@ remote_user = centos
 
 # if set, always use this private key file for authentication, same as
 # if passing --private-key to ansible or ansible-playbook
-private_key_file = /home/ubuntu/tokyo.pem
+#private_key_file = /path/to/file
 
 # If set, configures the path to the Vault password file as an alternative to
 # specifying --vault-password-file on the command line.
@@ -423,15 +423,9 @@ private_key_file = /home/ubuntu/tokyo.pem
 # requires a tty by default. 
 #usetty = True
 
-<<<<<<< HEAD
 # Number of times to retry an SSH connection to a host, in case of UNREACHABLE.
 # For each retry attempt, there is an exponential backoff,
 # so after the first attempt there is 1s wait, then 2s, 4s etc. up to 30s (max).
-=======
- #Number of times to retry an SSH connection to a host, in case of UNREACHABLE.
- #For each retry attempt, there is an exponential backoff,
- #so after the first attempt there is 1s wait, then 2s, 4s etc. up to 30s (max).
->>>>>>> 92b57a5c7689a7fa31a4f6570900375bf1386495
 #retries = 3
 
 [persistent_connection]
