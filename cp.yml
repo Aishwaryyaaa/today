@@ -1,0 +1,7 @@
+- name: to copy
+  hosts: all
+  tasks:
+  - name: apun ka ilaka
+    copy:
+      src: hosts
+      dest: /home/
