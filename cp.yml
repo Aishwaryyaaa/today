@@ -1,8 +1,8 @@
-- name: to copy
+- name: block
   hosts: all
   become: true
   tasks:
-  - name: apun ka ilaka
-    copy:
-      src: hosts
-      dest: /home/abc.txt
+    path: /mnt/myblock.txt
+    create: yes
+    block:
+       my data
