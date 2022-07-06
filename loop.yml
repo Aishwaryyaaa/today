@@ -2,7 +2,7 @@
   hosts: all
   tasks:
   - name: setkrege
-    set_facl: URL= ["ash.com","supercool.in"] city= somewhere 
+    set_fact: URL= ["ash.com","supercool.in"] city= somewhere 
 
   - name: setfacl
     debug:
