@@ -4,4 +4,4 @@
   - name: apun ka ilaka
     copy:
       src: hosts
-      dest: /home/
+      dest: /home/abc.txt
