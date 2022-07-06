@@ -2,7 +2,8 @@
   hosts: all
   become: true
   tasks:
-    path: /mnt/myblock.txt
-    create: yes
-    block:
-       my data
+  - blockinfile:
+      path: /mnt/myblock.txt
+      create: yes
+      block:
+         my data
