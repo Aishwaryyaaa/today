@@ -2,7 +2,7 @@
   hosts: all
   become: true
   vars:
-    bot: "{{place}}"
+    place: 'bot'
   tasks:
   - template:
       src: demo.txt
