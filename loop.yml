@@ -4,6 +4,6 @@
   - name: loop vala
     debug:
        msg: "ye apun ka illaka hai: {{item}} "
-  loop:
+    loop:
        -nagpur
        -pune
