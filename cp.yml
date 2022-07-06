@@ -1,5 +1,6 @@
 - name: to copy
   hosts: all
+  become: true
   tasks:
   - name: apun ka ilaka
     copy:
