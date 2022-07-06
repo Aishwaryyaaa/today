@@ -3,10 +3,10 @@
   tasks:
   - name: loop k liye
     debug:
-     msg: "ye apun ka illaka hai {{item}}"
+     msg: "ye apun ka illaka hai:{{item}}"
     loop:
-     -nagpur
-     -pune
-     -dubai
-     -fala
-     -dhamaka
+      -nagpur
+      -pune
+      -dubai
+      -fala
+      -dhamaka
