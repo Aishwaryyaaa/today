@@ -1,9 +1,9 @@
-- name: my
+- name: fortemplate
   hosts: all
+  become: true
+  vars:
+    bot: "{{place}}"
   tasks:
-  - name: setkrege
-    set_fact: URL=["ash.com","yolo.in"] city="somewhere" 
-
-  - name: setfact
-    debug:
-      msg: "{{URL}} {{city}}"
+  - template:
+      src: demo.txt
+      dest: /home/new.txt
