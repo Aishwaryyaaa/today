@@ -6,4 +6,4 @@
       path: /mnt/myblock.txt
       create: yes
       line:
-         15 20
+         15 20 nilam
