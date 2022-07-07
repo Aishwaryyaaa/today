@@ -6,7 +6,6 @@
     find: 
       paths: /root/test/test1
       file_type: directory
-      patterns: '*'
       register: ash
   - name:
     debug:
