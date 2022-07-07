@@ -4,10 +4,8 @@
   - name: to find
     find: 
       paths: /root/test/test1
-      file_type: directory
-      recurse: no
+      file_type: file
       patterns: '*'
-      register: ash
   - name:
     debug:
       msg: "this is : {{ash}}"
