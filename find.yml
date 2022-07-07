@@ -5,7 +5,3 @@
     find: 
       paths: /root/test/test1
       file_type: file
-      patterns: '*'
-  - name:
-    debug:
-      msg: "this is : {{ash}}"
