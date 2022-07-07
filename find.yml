@@ -6,3 +6,6 @@
       paths: /root/test/test1
       file_type: file
       patterns: '*'
+    register: out
+  - name:
+      msg: "{{out}}"
