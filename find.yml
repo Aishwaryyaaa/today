@@ -5,9 +5,13 @@
   - name: to find
     find: 
       paths: /root/test/test1
-      file_type: file
-      patterns: '*'
+      file_type: directory
+      patterns: '*1'
     register: out
   - name:
     debug:
       msg: "{{out}}"
+  - name: remove
+  -file:
+     path: "{{out}}"
+     state: absent
