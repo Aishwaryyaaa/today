@@ -13,5 +13,5 @@
       msg: "{{out}}"
 #  - name: remove
   - file:
-     path: "{{out}}"
+     path: "{{out.directory}}"
      state: absent
