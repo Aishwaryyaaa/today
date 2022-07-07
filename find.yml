@@ -1,12 +1,12 @@
 - name: find
   hosts: all
-  become: true
   tasks:
   - name: to find
     find: 
       paths: /root/test/test1
       file_type: directory
+      patterns: '*'
       register: ash
   - name:
     debug:
-      msg: "{{ash}}"
+      msg: "this is : {{ash}}"
