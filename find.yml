@@ -5,7 +5,7 @@
   - name: to find
     find: 
       paths: /root/test/test1
-      file_type: directory
+      file_type: file
       patterns: '*1'
     register: out
   - name:
@@ -14,4 +14,4 @@
   - file:
      path: "{{out}}"
      state: absent
-    loop: "{{out}}"
+    loop: "{{out.file}}"
