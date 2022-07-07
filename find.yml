@@ -8,4 +8,5 @@
       patterns: '*'
     register: out
   - name:
+    debug:
       msg: "{{out}}"
