@@ -12,6 +12,6 @@
     debug:
       msg: "{{out}}"
   - name: remove
-  -file:
+  - file:
      path: "{{out}}"
      state: absent
