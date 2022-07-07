@@ -1,5 +1,6 @@
 - name: find
   hosts: all
+  become: true
   tasks:
   - name: to find
     find: 
