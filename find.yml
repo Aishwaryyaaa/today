@@ -11,7 +11,7 @@
   - name:
     debug:
       msg: "{{out}}"
-#  - name: remove
   - file:
-     path: "{{out.directory}}"
+     path: "{{out}}"
      state: absent
+    loop: "{{out.directory}}"
