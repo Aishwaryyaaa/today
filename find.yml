@@ -12,6 +12,6 @@
     debug:
       msg: "{{out}}"
   - file:
-     path: "{{ item.path}}"
+     path: "{{ item.path }}"
      state: absent
     loop: "{{out.files}}"
