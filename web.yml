@@ -18,10 +18,8 @@
 - file:
     path: /var/www/html/index.nginx-debian.html
     state: absent
-- synchronize:
-    src: /var/www/html/tropiko-html
-    dest: /var/www/html
-    remote_src: true
+- name: to copy files in /var/www/html
+  shell: mv /var/www/html/tropiko-html/* -C /var/www/html/
 - name: start and enable nginx
   systemd:
     name: nginx
