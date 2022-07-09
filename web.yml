@@ -1,3 +1,5 @@
+#ubuntu-nginx-template-final
+
 - name: install nginx
   package:
     name: nginx
